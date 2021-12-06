@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import Navbar from './components/Navbar';
@@ -62,7 +61,7 @@ export default class App extends Component {
   }
 
   render() {
-    const { error, account, price } = this.state;
+    const { account, price } = this.state;
 
     return (
       <div className="App">
@@ -70,7 +69,7 @@ export default class App extends Component {
         <HeroSection buy={this.buy} price={price} />
         <div className="text-3xl shadow-xl border-light-blue-500 border-l-5 p-5" id="bundle">The Bundle NFTs</div>
         <div className="flex flex-wrap">
-          {nfts.map((nft, index) => <NFTCard nft={nft} />)}
+          {nfts.map((nft, index) => <NFTCard nft={nft} key={index} />)}
         </div>
       </div>
     );
