@@ -1,0 +1,12 @@
+{
+  "name": "batch_nft_seller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "api": "^4.1.1",
+    "dotenv": "^10.0.0"
+  }
+}
